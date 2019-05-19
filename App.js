@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Bananas from "./src/components/Bananas";
 import LotsOfGreetings from "./src/components/Greeting";
+import BlinkApp from "./src/components/Blink";
 
 export default class App extends React.Component {
   render() {
@@ -9,6 +10,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text style={{ fontWeight: "bold" }}>Shane-Lewes Tenorio</Text>
         <LotsOfGreetings />
+        <BlinkApp />
         <Bananas />
       </View>
     );
