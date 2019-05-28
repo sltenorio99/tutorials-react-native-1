@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { AppRegistry, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 class Blink extends Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class Blink extends Component {
     const { isShowingText } = this.state;
     const { text } = this.props;
 
-    return isShowingText && <Text>{text}</Text>;
+    return isShowingText && <Text style={styles.text}>{text}</Text>;
   }
 }
 
@@ -33,3 +33,9 @@ export default class BlinkApp extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  text: {
+    color: "blue"
+  }
+});
